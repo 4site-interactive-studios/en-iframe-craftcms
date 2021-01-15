@@ -1,0 +1,36 @@
+{
+  "name": "4site/craft-en-iframe",
+  "description": "ENGrid for Craft CMS: Seamless Engaging Networks iFramed Pages in Craft CMS",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "iframe",
+    "engaging",
+    "networks"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "4Site Studios",
+      "homepage": "http://4sitestudios.com/en?ms=github"
+    }
+  ],
+  "support": {
+    "email": "bryan@4sitestudios.com",
+    "issues": "https://github.com/4site-interactive-studios/en-iframe-craftcms/issues",
+    "source": "https://github.com/4site-interactive-studios/en-iframe-craftcms",
+    "docs": "https://github.com/4site-interactive-studios/en-iframe-craftcms/blob/main/README.md"
+  },
+  "require": {
+    "craftcms/cms": "^3.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EN\\iframe\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Engaging Networks Iframe",
+    "handle": "en-iframe"
+  }
+}

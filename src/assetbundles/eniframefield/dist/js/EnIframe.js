@@ -6,10 +6,13 @@ function getFrameByEvent(event) {
     })[0];
 }
 window.onmessage = (e) => {
+// console.log({source:
+//     e.source, data: e.data});
   var iframe = getFrameByEvent(e);
   if (iframe) {
     if (e.data.hasOwnProperty("frameHeight")) {
       iframe.style.height = `${e.data.frameHeight}px`;
+      // console.log("Parent Script Setting Height To", e.data.frameHeight);
     } else if (e.data.hasOwnProperty("scroll") && e.data.scroll > 0) {
       // e.data.scroll will be the iframe offset to scroll, 1 = top of the iframe
       const elDistanceToTop =

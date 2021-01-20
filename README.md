@@ -74,7 +74,7 @@ Open up your Twig template (ours is _about.twig) and paste in the following code
 
 Please Note how our template refers to the field as `entry.donationform` please update this to the handle for your field
 
-Lastly we must include the associated AssetBundle for the plugin which controls the automatic functionality of the iFrame. Add this line to the bottom of your template before the `{% endblock %}` of your content block.
+Lastly we must include the associated AssetBundle for the plugin which controls the automatic functionality of the iFrame. Add this line to the bottom of the head tag in your layout template.
 
 ```
 {% do view.registerAssetBundle("EN\\iframe\\assetbundles\\eniframefield\\EnIframeFieldAsset") %}

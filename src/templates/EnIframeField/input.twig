@@ -1,0 +1,37 @@
+{#
+/**
+ * EnIframe plugin for Craft CMS 3.x
+ *
+ * Craft plugin to generate an EnIframe.
+ *
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+<div class="en-iframe-container">
+
+    <div class="en-iframe-urlContainer flex">
+        <div class="texticon globe icon clearable flex-grow">
+            {{ forms.text({
+                id: name,
+                name: name,
+                type: 'url',
+                placeholder: 'Engaging Networks Url',
+                value: value ? value,
+                class: 'en-iframe-url'
+            }) }}
+        </div>
+    </div>
+
+    <div class="en-iframe-previewContainer">
+        {% include 'en-iframe/EnIframeField/inputEmbed.twig' with {
+            name: name,
+            value: value
+        } only %}
+    </div>
+
+</div>
+
+
+

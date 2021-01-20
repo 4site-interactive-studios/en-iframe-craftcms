@@ -31,6 +31,9 @@
   },
   "extra": {
     "name": "Engaging Networks Iframe",
-    "handle": "en-iframe"
+    "hasCpSettings": false,
+		"hasCpSection": false,
+    "handle": "en-iframe",
+    "class" : "EN\\iframe\\EnIframe"
   }
 }

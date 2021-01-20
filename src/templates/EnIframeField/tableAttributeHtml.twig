@@ -1,0 +1,19 @@
+{#
+/**
+ * EnIframe plugin for Craft CMS 3.x
+ *
+ * Craft plugin to generate an EnIframe.
+ *
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+
+<div class="en-iframe-tableAttributeHtml">
+    <div class="en-iframe-tableAttributeHtml-thumb">
+	{% if value %}
+        <img src="{{ craft.enIframe.getVideoThumbnail(value) }}" alt="">
+	{% endif %}
+    </div>
+</div>

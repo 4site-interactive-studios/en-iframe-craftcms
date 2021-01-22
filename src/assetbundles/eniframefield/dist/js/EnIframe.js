@@ -28,3 +28,11 @@ window.onmessage = (e) => {
     }
   }
 };
+
+window.onload = e => {
+  let frames = document.getElementsByClassName('en-iframe');
+  for(let i=0; i<frames.length; i++){
+    let src = frames[i].getAttribute('data-src');
+    frames[i].setAttribute('src',src);
+  }
+}

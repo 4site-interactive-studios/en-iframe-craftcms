@@ -1,5 +1,9 @@
 # EN iFrame Plugin for CraftCMS
 
+This plugin was created for adding a Custom Field to Craft CMS for loading in an Engaging Networks page.
+
+- ENGrid is required on the Client-Side - [Located Here](https://github.com/4site-interactive-studios/engrid)
+
 ## Installation
 
 Please clone this repository into a directory next to your Craft CMS installation and modify `composer.json` to include the following lines:

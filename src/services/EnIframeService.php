@@ -30,7 +30,7 @@ class EnIframeService extends Component
     public function embed( $url, $params = [] ) : string
     {
         try {
-            $code = "<iframe loading='lazy' id='en-iframe' width='100%' scrolling='no' class='en-iframe ' src='$url' frameborder='0' allowfullscreen='' allow='autoplay; encrypted-media'></iframe>";
+            $code = "<iframe loading='lazy' width='100%' scrolling='no' class='en-iframe ' data-src='$url' frameborder='0' allowfullscreen='' allow='autoplay; encrypted-media'></iframe>";
 
             
             if (!empty($code)) {

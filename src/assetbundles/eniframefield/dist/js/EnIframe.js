@@ -34,5 +34,6 @@ window.onload = e => {
   for(let i=0; i<frames.length; i++){
     let src = frames[i].getAttribute('data-src');
     frames[i].setAttribute('src',src);
+    frames[i].setAttribute('style','');
   }
 }

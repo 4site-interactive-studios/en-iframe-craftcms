@@ -11,6 +11,7 @@ window.onmessage = (e) => {
   var iframe = getFrameByEvent(e);
   if (iframe) {
     if (e.data.hasOwnProperty("frameHeight")) {
+      iframe.style.display = "block";
       iframe.style.height = `${e.data.frameHeight}px`;
       // console.log("Parent Script Setting Height To", e.data.frameHeight);
     } else if (e.data.hasOwnProperty("scroll") && e.data.scroll > 0) {
@@ -34,6 +35,5 @@ window.onload = e => {
   for(let i=0; i<frames.length; i++){
     let src = frames[i].getAttribute('data-src');
     frames[i].setAttribute('src',src);
-    frames[i].setAttribute('style','');
   }
 }
